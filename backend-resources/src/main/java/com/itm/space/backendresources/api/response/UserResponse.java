@@ -1,5 +1,6 @@
 package com.itm.space.backendresources.api.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;

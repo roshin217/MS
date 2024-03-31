@@ -1,4 +1,4 @@
-package com.itm.space.backendresources;
+package com.itm.space.backendresources.util;
 
 import org.springframework.stereotype.Component;
 
