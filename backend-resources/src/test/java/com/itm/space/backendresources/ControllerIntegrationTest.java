@@ -22,7 +22,7 @@ class ControllerIntegrationTest extends BaseIntegrationTest {
 
     @Test
     @WithMockUser(roles = "MODERATOR")
-    void testCreateUser_noExistUser() throws Exception {
+    void testCreateUser_nonExist() throws Exception {
 
         String username = randomUserGenerator.generateUsername();
         String email = randomUserGenerator.generateEmail(username);
@@ -43,7 +43,7 @@ class ControllerIntegrationTest extends BaseIntegrationTest {
 
     @Test
     @WithMockUser(roles = "MODERATOR")
-    void testCreateUser_existUser() throws Exception {
+    void testCreateUser_exist() throws Exception {
         UserRequest userRequest = new UserRequest(
                 "test",
                 "test@gmail.com",
